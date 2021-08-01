@@ -12,7 +12,7 @@ socket.on('connect', () => console.log('[IO] Conectar => Uma nova conexão foi e
 const Chat = () => {
     const [message, updateMessage] = useState('')
     const [messages, updateMessages] = useState([])
-
+ 
     useEffect(() => {
         const handleNewMessage = newMessage =>
             updateMessages([...messages, newMessage])
